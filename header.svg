@@ -13,8 +13,6 @@
                 }
 
                 .body {
-                    background: linear-gradient(270deg, #8445c3, #d838ab, #d4145a, #fbb03b);
-                    background-size: 300% 300%;
                     height: 100vh;
                     width: 100%;
                     display: flex;
@@ -25,9 +23,12 @@
                     border-radius: 0.75rem;
                     color: #ffffff;
 
-                    -webkit-animation: InfiniteScroll 15s ease infinite;
-                    -moz-animation: InfiniteScroll 15s ease infinite;
-                    animation: InfiniteScroll 15s ease infinite;
+                    background: linear-gradient(45deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+                    background-size: 300% 300%;
+
+                    -webkit-animation: gradient-scroll 10s ease-in-out infinite;
+                    -moz-animation: gradient-scroll 10s ease-in-out infinite;
+                    animation: gradient-scroll 10s ease-in-out infinite;
                 }
 
                 .container {
@@ -46,7 +47,7 @@
                     line-height: 1.75rem;
                 }
 
-                @-webkit-keyframes InfiniteScroll {
+                @-webkit-keyframes gradient-scroll {
                     0% {
                         background-position: 0% 50%;
                     }
@@ -60,7 +61,7 @@
                     }
                 }
 
-                @-moz-keyframes InfiniteScroll {
+                @-moz-keyframes gradient-scroll {
                     0% {
                         background-position: 0% 50%;
                     }
@@ -74,7 +75,7 @@
                     }
                 }
 
-                @keyframes InfiniteScroll {
+                @keyframes gradient-scroll {
                     0% {
                         background-position: 0% 50%;
                     }
@@ -87,6 +88,7 @@
                         background-position: 0% 50%;
                     }
                 }
+
 
                 @media only screen and (max-width: 500px) {
                     .container h2 {
